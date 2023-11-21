@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -29,6 +30,11 @@
             background-color:gray ;
             color: white;
         } 
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color:gray ;
+        }
         tbody > tr:nth-child(odd) {
             background-color: lightgray;
         }
@@ -84,7 +90,7 @@
         <tfoot>
             <tr>
                 <th scope="row">total de Habitantes</th>
-                <td>0000</td>
+                <td>0000</td> 
             </tr>
         </tfoot>
 
